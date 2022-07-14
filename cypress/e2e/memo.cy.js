@@ -60,7 +60,7 @@ context('Memotest', () => {
 
         cy.get('.cuadro').should('have.length', 0);
 
-        cy.get('.tablero').should('not.be.visible');
+        cy.get('#tablero').should('not.be.visible');
         const numeroTurnos = NUMERO_CUADROS / 2 + 1; //porque se testeó 1 incorrecto.
         cy.get('#fin-juego').
             should('be.visible').
